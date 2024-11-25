@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <row>
+        <persName>John Adams</persName>
+        <affiliation>Military, Politics, and Law</affiliation>
+        <gender>Male</gender>
+        <birthYear>1735</birthYear>
+        <birthPlace>Braintree, Norfolk County, Massachusetts, United States</birthPlace>
+        <firstAppearance>5</firstAppearance>
+        <QID>Q11806</QID>
+        <birthDate>1735-10-19</birthDate>
+        <VIAF>95296943</VIAF>
+        <BND>68575</BND>
+        <deathDate>1826-07-04</deathDate>
+        <surname>Adams</surname>
+        <forename>John</forename>
+        <addName></addName>
+        <graphic>https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Official_Presidential_portrait_of_John_Adams_(by_John_Trumbull,_circa_1792).jpg</graphic>
+        <occupation>lawyer, politician, diplomat, political philosopher, statesperson, writer</occupation>
+        <primaryOccupation>lawyer</primaryOccupation>
+        <searchablePlace>Braintree, Massachusetts, United States</searchablePlace>
+    </row>
+    <row>
+        <persName>Charles Follen Adams</persName>
+        <affiliation>Literature</affiliation>
+        <gender>Male</gender>
+        <birthYear>1842</birthYear>
+        <birthPlace>Dorchester, Dorset, United Kingdom</birthPlace>
+        <firstAppearance>10</firstAppearance>
+        <QID>Q1064386</QID>
+        <birthDate>1842-04-21</birthDate>
+        <VIAF>73130780</VIAF>
+        <BND></BND>
+        <deathDate>1918-03-08</deathDate>
+        <surname>Adams</surname>
+        <forename>Charles</forename>
+        <addName>Follen</addName>
+        <graphic>https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/1878_CharlesFAdams_Leedle_Boston_illus_byBoz.png</graphic>
+        <occupation>poet, writer</occupation>
+        <primaryOccupation>poet</primaryOccupation>
+        <searchablePlace>Dorchester, England</searchablePlace>
+    </row>
+</root>
