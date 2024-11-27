@@ -25,7 +25,7 @@
     </xsl:template>
     
     <xsl:template match="row">                       
-            <xsl:result-document href="output_{persName}.xml">
+            <xsl:result-document href="output_{persName}.html">
                 <html lang="en" xml:lang="en">   
                     <head>
                         <title>Record for <xsl:value-of select="persName"/></title>
@@ -135,13 +135,11 @@
     
     <xsl:template match="deathDate[text()]">
         <xsl:element name="{'meta'}" use-attribute-sets="deathDate classDate content_K"/> 
+    </xsl:template>    
+        
+    <xsl:template match="searchablePlace">
+        <xsl:element name="{'meta'}" use-attribute-sets="searchablePlace classDesc content_R"/> 
     </xsl:template>
-    
-    <!--
-        RESUME HERE
-        <xsl:template match="searchablePlace">
-        <xsl:element name="{'meta'}" use-attribute-sets="deathDate classDate content_K"/> 
-    </xsl:template>-->
     
     <!-- Called by <body> -->
     
@@ -154,39 +152,43 @@
             <!-- Names -->
     
     <xsl:attribute-set name="persName">
-        <xsl:attribute name="name">name</xsl:attribute>
+        <xsl:attribute name="name">Name</xsl:attribute>
     </xsl:attribute-set>
     
     <xsl:attribute-set name="field">
-        <xsl:attribute name="name">field</xsl:attribute>
+        <xsl:attribute name="name">Field</xsl:attribute>
     </xsl:attribute-set>
     
     <xsl:attribute-set name="gender">
-        <xsl:attribute name="name">gender</xsl:attribute>
+        <xsl:attribute name="name">Gender</xsl:attribute>
     </xsl:attribute-set>
     
     <xsl:attribute-set name="birthPlace">
-        <xsl:attribute name="name">birthPlace</xsl:attribute>
+        <xsl:attribute name="name">Birth Place</xsl:attribute>
     </xsl:attribute-set>
     
     <xsl:attribute-set name="occupation">
-        <xsl:attribute name="name">occupation</xsl:attribute>
+        <xsl:attribute name="name">Occupation</xsl:attribute>
     </xsl:attribute-set>
     
     <xsl:attribute-set name="occupationPrimary">
-        <xsl:attribute name="name">occupationPrimary</xsl:attribute>
+        <xsl:attribute name="name">Primary Occupation</xsl:attribute>
     </xsl:attribute-set>
     
     <xsl:attribute-set name="firstAppearance">
-        <xsl:attribute name="name">firstAppearance</xsl:attribute>
+        <xsl:attribute name="name">First appears in Edition</xsl:attribute>
     </xsl:attribute-set>
     
     <xsl:attribute-set name="birthDate">
-        <xsl:attribute name="name">birthDate</xsl:attribute>
+        <xsl:attribute name="name">Date of Birth</xsl:attribute>
     </xsl:attribute-set>
     
     <xsl:attribute-set name="deathDate">
-        <xsl:attribute name="name">deathDate</xsl:attribute>
+        <xsl:attribute name="name">Date of Death</xsl:attribute>
+    </xsl:attribute-set>
+    
+    <xsl:attribute-set name="searchablePlace">
+        <xsl:attribute name="name">Birth Country</xsl:attribute>
     </xsl:attribute-set>
     
             <!-- Classes -->
@@ -243,7 +245,8 @@
     
     <xsl:attribute-set name="content_K">
         <xsl:attribute name="content">
-            <xsl:value-of select="."/></xsl:attribute>
+            <xsl:value-of select="."/>
+        </xsl:attribute>
     </xsl:attribute-set>
     
     <xsl:attribute-set name="content_P">
@@ -253,6 +256,12 @@
     </xsl:attribute-set>
     
     <xsl:attribute-set name="content_Q">
+        <xsl:attribute name="content">
+            <xsl:value-of select="."/>
+        </xsl:attribute>
+    </xsl:attribute-set>
+    
+    <xsl:attribute-set name="content_R">
         <xsl:attribute name="content">
             <xsl:value-of select="."/>
         </xsl:attribute>
