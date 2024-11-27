@@ -41,33 +41,59 @@ header p {
 
 /* Navigation Styles */
 nav {
-    background-color: #232e5a;
-    padding: 10px 0;
+    background-color: #232e5a; /* Dark blue header background */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between project name and menu */
+    align-items: center; /* Vertically align items */
+    padding: 10px 20px; /* Add some padding around the navigation */
+}
+
+.project-name {
+    font-family: 'Georgia', serif; /* Project name font */
+    font-size: 1.5em; /* Increase font size */
+    color: #fdf8ee; /* White color for the project name */
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
+    display: flex; /* Make menu horizontal */
+    gap: 40px; /* Add spacing between menu items */
+    list-style: none; /* Remove bullets */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
 }
 
-.menu li {
-    display: inline-block;
+.menu
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+    display: inline; /* Ensure horizontal layout */
+    float: right;
 }
 
 .menu a {
     font-family: 'Arial', sans-serif;
-    color: #fdf8ee;
-    text-decoration: none;
+    color: #00a29f; /* Green text for menu items */
+    text-decoration: none; /* Remove underline */
     font-weight: bold;
-    padding: 10px 15px;
-    transition: color 0.3s;
+    padding: 10px 15px; /* Add padding inside the box */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+
+    /* Add a border and box */
+    border: 2px solid #00a29f; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: transparent; /* Transparent background by default */
+    display: inline-block; /* Ensure the box wraps tightly around the text */
 }
 
 .menu a:hover {
-    color: #00a29f; /* Green for hover effect */
+    color: #232e5a; /* Dark blue text on hover */
+    background-color: #fdf8ee; /* Yellow background box */
+    border-color: #fdf8ee; /* Yellow border matches background */
 }
+
 
 /* Main Content */
 main {
