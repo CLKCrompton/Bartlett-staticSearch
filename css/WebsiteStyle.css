@@ -7,7 +7,7 @@
 
 /* Body Styles */
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Fira Sans', sans-serif;
     color: #232e5a; /* Navy for main text */
     background-color: #fdf8ee; /* Light yellow-white for background */
     line-height: 1.8;
@@ -30,8 +30,8 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    font-family: 'Arial', sans-serif;
-    color: #fdf8ee;
+    font-family: 'Fira Sans', sans-serif;
+    color: #00a29f;
 }
 
 header p {
@@ -41,57 +41,90 @@ header p {
 
 /* Navigation Styles */
 nav {
-    background-color: #232e5a; /* Dark blue header background */
+    background-color: FDF8EE;
     display: flex; /* Use Flexbox for layout */
-    justify-content: space-between; /* Space between project name and menu */
-    align-items: center; /* Vertically align items */
-    padding: 10px 20px; /* Add some padding around the navigation */
+      align-items: center; /* Center items vertically */
+    justify-content: center; /* Space between project name and menu */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Add padding around the navigation */
 }
-
-.project-name {
-    font-family: 'Georgia', serif; /* Project name font */
-    font-size: 1.5em; /* Increase font size */
-    color: #fdf8ee; /* White color for the project name */
-}
-
-.menu {
-    display: flex; /* Make menu horizontal */
-    gap: 40px; /* Add spacing between menu items */
-    list-style: none; /* Remove bullets */
+nav ul {
+    list-style: none; /* Remove bullet points */
     margin: 0; /* Reset default margin */
     padding: 0; /* Reset default padding */
 }
 
-.menu
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-li {
-    display: inline; /* Ensure horizontal layout */
-    float: right;
+.project-name {
+    font-family: 'Fira Sans', sans-serif; /* Project name font */
+    font-size: 1.5em; /* Increase font size */
+    color: #fdf8ee; /* White color for the project name */
 }
 
-.menu a {
-    font-family: 'Arial', sans-serif;
-    color: #00a29f; /* Green text for menu items */
+/* Main Menu */
+.navbar-menu {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    display: flex; /* Make the menu horizontal */
+  gap: 2px; /* Space between menu items */
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+}
+
+.navbar-menu > li {
+    position: relative; /* Enable positioning for dropdown */
+      float: left; /* Make list items horizontal */
+
+}
+
+/* Base Styles for Links */
+.navbar-menu > li > a,
+.navbar-menu .dropdown-menu a {
+    font-family: 'Fira Sans', sans-serif;
+    color: #232e5a; /* Dark blue text */
     text-decoration: none; /* Remove underline */
-    font-weight: bold;
-    padding: 10px 15px; /* Add padding inside the box */
-    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
-
-    /* Add a border and box */
-    border: 2px solid #00a29f; /* Green border */
+    font-weight: normal;
+    padding: 10px 15px; /* Add padding around menu text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
+    background-color: transparent; /* Transparent background */
     border-radius: 5px; /* Rounded corners */
-    background-color: transparent; /* Transparent background by default */
-    display: inline-block; /* Ensure the box wraps tightly around the text */
+    display: block; /* Make dropdown items block elements */
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    display: block; /* Ensure links fill their parent list items */
+    background-color: #fdf8ee;
+      padding: 10px 20px; /* Increase space inside the dropdown items */
+    min-width: 150px; /* Set a minimum width for dropdown boxes */
+    display: block; /* Ensure the clickable area is full-width */
+    text-align: left; /* Align text within the box */
 }
-
-.menu a:hover {
-    color: #232e5a; /* Dark blue text on hover */
-    background-color: #fdf8ee; /* Yellow background box */
-    border-color: #fdf8ee; /* Yellow border matches background */
+/* Hide Dropdown Menu by Default */
+.navbar-menu .dropdown-menu {
+    display: none; /* Hides dropdown menu initially */
+  padding: 10px; /* Add space around the entire dropdown menu */
+    min-width: 200px; /* Minimum width for the entire dropdown */
+    background-color: ebbc4b; /* Background matches theme */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+    border-radius: 5px; /* Optional rounded corners */
+}
+/* Show Dropdown Menu on Hover */
+.navbar-menu > li:hover .dropdown-menu {
+    display: block; /* Displays dropdown menu on hover */
+    position: absolute; /* Ensures it floats */
+    top: 100%; /* Aligns it below the parent menu item */
+    left: 0; /* Aligns it with the left edge of the parent menu item */
+    background-color: #ebbc4b; /* Matches overall theme */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional dropdown shadow */
+    padding: 10px; /* Space inside dropdown menu */
+    border-radius: 5px; /* Rounded corners for dropdown */
+}
+/* Hover Effects for All Links */
+.navbar-menu > li > a:hover,
+.navbar-menu .dropdown-menu a:hover {
+    color: #232e5a; /* Yellow text on hover */
+    background-color: #ebbc4b;
 }
 
 
@@ -102,6 +135,29 @@ main {
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footnotes and Bibliography */
+.footnotes, .bibliography {
+    text-align: left; /* Left-justify the text */
+    font-size: 14px; /* 2pt smaller than main text (16px - 2pt = 14px) */
+    line-height: 1.4; /* Adjust line spacing for smaller text */
+    margin-top: 10px; /* Add some space above the section */
+}
+.footnote {
+    font-size: 0.8em; /* Smaller than main text */
+    font-weight: normal !important; /* Explicitly remove bold styling */
+    vertical-align: super; /* Position it as superscript */
+    line-height: 1; /* Maintain proper spacing */
+}
+
+
+.bibliography p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-indent: -20px; /* Indent the first line negatively */
+    margin-left: 20px; /* Push the entire paragraph to the right */
+    line-height: 1.5; /* Adjust line spacing for readability */
 }
 
 /* Home Page Styles */
@@ -127,64 +183,65 @@ main {
     color: #333;
 }
 
-/* Timeline Page Styles */
-#timeline-page {
-    padding: 20px;
-}
-
-#timeline-page h2 {
-    color: #232e5a; /* Navy */
-    border-bottom: 3px solid #ebbc4b;
-}
-
-/* Integrated Timeline Styles */
+/* Timeline Container */
 #timeline-page .timeline {
     position: relative;
     padding: 20px 0;
-    border-left: 3px solid #00a29f; /* Green line for the timeline */
+    border-left: none; /* Remove existing line on the left */
+    border-right: none; /* Add central line */
+    width: 2px;
+    background-color: #00a29f; /* Green central timeline line */
+    margin: 0 auto; /* Center the timeline line */
 }
 
+/* Timeline Entry */
 #timeline-page .timeline-entry {
     position: relative;
-    padding-left: 20px;
+    width: 50%; /* Half-width for alternating sides */
+    padding: 10px 20px;
     margin-bottom: 20px;
+    display: flex; /* Enables better alignment */
+    align-items: center;
 }
 
-#timeline-page .timeline-entry h3 {
-    font-size: 1.5rem;
-    color: #232e5a; /* Navy */
-    margin-bottom: 5px;
+/* Alternating Entry Positions */
+#timeline-page .timeline-entry:nth-child(odd) {
+    left: 0; /* Align left */
+    justify-content: flex-end; /* Align text away from the center line */
+    text-align: right; /* Text alignment for left-side entries */
 }
 
-#timeline-page .timeline-entry p {
-    font-size: 1rem;
-    color: #333; /* Dark Gray */
+#timeline-page .timeline-entry:nth-child(even) {
+    left: 50%; /* Align right */
+    justify-content: flex-start; /* Align text away from the center line */
+    text-align: left; /* Text alignment for right-side entries */
 }
 
-/* Timeline Marker */
+/* Connecting Markers */
 #timeline-page .timeline-entry::before {
     content: '';
     position: absolute;
-    left: -10px;
-    top: 0;
+    top: 15px; /* Align marker with text */
+    right: -12px; /* Position marker for left-aligned entries */
     width: 15px;
     height: 15px;
     background-color: #00a29f; /* Green marker */
+    border: 3px solid #fdf8ee; /* Light border */
     border-radius: 50%;
-    border: 3px solid #fdf8ee; /* Light Yellow-White border */
+    z-index: 1;
 }
 
-/* Alternating Background for Entries */
-#timeline-page .timeline-entry:nth-child(even) {
-    background-color: #fdf8ee; /* Light Yellow-White */
-    padding: 10px;
+#timeline-page .timeline-entry:nth-child(even)::before {
+    left: -12px; /* Adjust marker position for right-aligned entries */
+    right: auto; /* Reset for alternating logic */
+}
+
+/* Styling for Text Blocks */
+#timeline-page .timeline-entry-content {
+    background-color: #fdf8ee; /* Light Yellow */
+    padding: 15px;
     border-radius: 8px;
-}
-
-/* Hover Effect for Timeline Entries */
-#timeline-page .timeline-entry:hover {
-    background-color: #ebbc4b; /* Light Yellow Hover */
-    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Visualizations Page Styles */
@@ -255,18 +312,19 @@ footer a:hover {
     color: #f34b2e;
 }
 
-/* Links */
+/* Links Styled Like Main Text */
 a {
-    color: #00a29f;
-    text-decoration: none;
-    border-bottom: 1px solid #ebbc4b;
-    transition: color 0.3s;
+    color: inherit; /* Inherit color from the main text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
+/* Links Hover Effect */
 a:hover {
-    color: #f34b2e;
-    border-bottom: 1px solid transparent;
+    color: #00a29f; /* Green color for hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
