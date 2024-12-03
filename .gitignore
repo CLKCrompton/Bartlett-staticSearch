@@ -20,6 +20,8 @@ VERSION
 /test/search.html
 /test/searchWorthReading.html
 /test/search-debug.html
+/bartlett0312/search.html
+/bartlett0312/ssTest
 
 # Other files generated in test build
 /test/ssTest/*
