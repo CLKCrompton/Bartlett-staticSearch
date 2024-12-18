@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bartlett’s Familiar Quotations Project</title>
-    <link rel="stylesheet" href="/css/WebsiteStyle.css" />
+    <link rel="stylesheet" href="../css/WebsiteStyle.css" />
 </head>
 
 <body>
@@ -16,32 +16,107 @@
             <ul class="navbar-menu">
                 <li><a href="#">Home</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">About</a>
+                    <a href="about.html" class="dropdown-toggle">About</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#overview">The Project Overview</a></li>
-                        <li><a href="#team">The Team</a></li>
-                        <li><a href="#how">How Did They Make That</a></li>
+                        <li><a href="overview.html">The Project Overview</a></li>
+                        <li><a href="team.html">The Team</a></li>
+                        <li><a href="how.html">How Did They Make That</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">BFQ Editions</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#literature-review">Literature Review</a></li>
-                        <li><a href="#timeline">Timeline of the Editions</a></li>
+                        <li><a href="litrev.html">Literature Review</a></li>
+                        <li><a href="timeline.html">Timeline of the Editions</a></li>
                     </ul>
                 </li>
-                <li><a href="#visualizations">Visualization and Findings</a></li>
+                <li><a href="visualizations.html">Visualization and Findings</a></li>
                 <li><a href="/bartlett0312/search.html">Browse the Editions</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
 
             </ul>
         </nav>
     </header>
+
     <!-- Team Page -->
     <section id="team-page">
         <h2>The Team</h2>
         <p>Meet the dedicated individuals behind this project.</p>
     </section>
+
+    <body>
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <div class="bio">
+                    <h3>Dr. Constance Crompton (she/her)</h3>
+                    <p><strong>Project Director</strong></p>
+                    <p>Constance is a white, queer, able-bodied settler and Canada Research Chair in Digital Humanities.
+                        Her research interests are in linked data, data modelling, code as a representational medium,
+                        queer history, and Victorian popular culture. She is an associate director of the Digital
+                        Humanities Summer Institute (University of Victoria) and former vice-president of the Canadian
+                        Society for Digital Humanities/Société canadienne des humanités numériques.</p>
+                </div>
+                <img src="constance.jpg" alt="Dr. Constance Crompton">
+            </div>
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <div class="bio">
+                    <h3>Dr. Bridget Moynihan (she/her)</h3>
+                    <p><strong>Postdoctoral Fellow</strong></p>
+                    <p>Bridget was a Postdoctoral Fellow with the Implementing New Knowledge Environments (INKE)
+                        Partnership and with Library and Archives Canada-Bibliothèque et Archives Canada (LAC-BAC).
+                        Prior to this fellowship, she completed her PhD at the University of Edinburgh (2020), her MLIS
+                        from Western University (2021), and her MA from the University of Calgary (2015). Bridget loves
+                        working in both physical archives and digital spaces, but especially loves working at the points
+                        where the two intersect. She joined the lab in May 2023 and her last contribution before leaving
+                        HDL was on compiling the literature review for BFQ.</p>
+                </div>
+                <img src="../images/bridget.jpg" alt="Dr. Bridget Moynihan">
+            </div>
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <div class="bio">
+                    <h3>Moni Razavi (she/her/elle)</h3>
+                    <p><strong>Research Assistant</strong></p>
+                    <p>Moni is currently a PhD candidate in Translation Studies at the University of Ottawa. She
+                        graduated in Literature, Visual Culture, and Film Studies from Tallinn University in Estonia
+                        where she joined the Estonian Society for Digital Humanities. Starting from March 2022, Moni
+                        works as a research assistant, research coordinator and administrative assistant in uOttawa's
+                        Humanities Data Lab to analyze the data on the first 10 editions of Bartlett’s Familiar
+                        Quotations and TEI in the LGLC project. Her doctoral thesis aims at decolonizing Adaptation
+                        Studies by DH methodology in three levels of epistemology, discipline, and practice.</p>
+                </div>
+                <img src="../images/moni.jpg" alt="Moni Razavi">
+            </div>
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <div class="bio">
+                    <h3>Alice Defours (she/her)</h3>
+                    <p><strong>Research Assistant</strong></p>
+                    <p>Alice Defours is a PhD student in Digital Humanities at the university of Ottawa and a metadata
+                        architect for the Humanities Data Lab, as well as research assistant for the LINCS project.
+                        Prior to joining uOttawa, she graduated from the Université Lumière Lyon II in “Mondes Anciens”
+                        (history-archaeology) then in “Humanités Numériques” (Digital Humanities). As a cultural
+                        programs’ coordinator, she values the impact of communication and transmission of knowledge
+                        through its accessibility. She also works as a freelance event manager and game designer.</p>
+                </div>
+                <img src="../images/alice.jpg" alt="Alice Defours">
+            </div>
+            <!-- Team Member 5 -->
+            <div class="team-member">
+                <div class="bio">
+                    <h3>Lori Antranikian</h3>
+                    <p><strong>Research Assistant</strong></p>
+                    <p>Lori was a fourth-year computer science student when she worked on BFQ. She was really intrigued
+                        with digital humanities after taking DHN1100, an introductory course to the digital humanities
+                        in fall 2018. She joined the lab as a research assistant in January 2019 where she was working
+                        to analyze data on the first 10 editions of Bartlett’s Familiar Quotations.</p>
+                </div>
+                <img src="../images/lori.jpg" alt="Lori Antranikian">
+            </div>
+        </div>
+    </body>
     <!-- Footer -->
     <footer>
         <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span
@@ -55,11 +130,12 @@
         <p>We would like to thank our funders and supporters:</p>
         <div id="funder-logos">
             <img src="../images/logo_01_italic.svg" alt="Static Search Logo provided by Static Search."
-                class="funder-logo" />
-            <img src="../images/SSHRC_logo.jpg" alt="SSHRC Logo provided by SSHRC." class="funder-logo" />
-            <img src="../images/GREN_logo.jpg" alt="GREN Logo provided by GREN." class="funder-logo" />
-            <img src="../images/CRIHN_logo.jpg" alt="CRIHN Logo provided by CRIHN." class="funder-logo" />
-            <img src="../images/HGL_logo.jpg" alt="HDL Logo provided by Humanities Data Lab." class="funder-logo" />
+                class="funder-logo white-bg" />
+            <img src="../images/SSHRC_logo.jpg" alt="SSHRC Logo provided by SSHRC." class="funder-logo white-bg" />
+            <img src="../images/GREN_logo.jpg" alt="GREN Logo provided by GREN." class="funder-logo white-bg" />
+            <img src="../images/CRIHN_logo.jpg" alt="CRIHN Logo provided by CRIHN." class="funder-logo white-bg" />
+            <img src="../images/HDL_logo.jpg" alt="HDL Logo provided by Humanities Data Lab."
+                class="funder-logo white-bg" />
     </footer>
 </body>
 
