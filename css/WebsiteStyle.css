@@ -8,8 +8,10 @@
 /* Body Styles */
 body {
     font-family: 'Fira Sans', sans-serif;
-    color: #232e5a; /* Navy for main text */
-    background-color: #fdf8ee; /* Light yellow-white for background */
+    color: #232e5a;
+    /* Navy for main text */
+    background-color: #fdf8ee;
+    /* Light yellow-white for background */
     line-height: 1.8;
 }
 
@@ -22,9 +24,11 @@ body {
 
 /* Header */
 header {
-    background-color: #232e5a; /* Navy background */
+    background-color: #232e5a;
+    /* Navy background */
     padding: 20px;
-    color: #fdf8ee; /* Light yellow-white for text */
+    color: #fdf8ee;
+    /* Light yellow-white for text */
     text-align: center;
 }
 
@@ -34,99 +38,173 @@ header h1 {
     color: #00a29f;
 }
 
-header p {
-    font-size: 1.1rem;
-    color: #ffe698; /* Light Yellow for subheading */
+/* Paragraph Styles */
+p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    /* Adds more space between paragraphs */
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #232e5a;
+    border-bottom: 3px solid #ebbc4b;
+    /* Add underline to headings */
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #232e5a;
 }
 
 /* Navigation Styles */
 nav {
     background-color: FDF8EE;
-    display: flex; /* Use Flexbox for layout */
-      align-items: center; /* Center items vertically */
-    justify-content: center; /* Space between project name and menu */
-    align-items: center; /* Vertically center items */
-    padding: 10px 20px; /* Add padding around the navigation */
+    display: flex;
+    /* Use Flexbox for layout */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Space between project name and menu */
+    align-items: center;
+    /* Vertically center items */
+    padding: 10px 20px;
+    /* Add padding around the navigation */
 }
+
 nav ul {
-    list-style: none; /* Remove bullet points */
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Reset default margin */
+    padding: 0;
+    /* Reset default padding */
 }
 
 .project-name {
-    font-family: 'Fira Sans', sans-serif; /* Project name font */
-    font-size: 1.5em; /* Increase font size */
-    color: #fdf8ee; /* White color for the project name */
+    font-family: 'Fira Sans', sans-serif;
+    /* Project name font */
+    font-size: 1.5em;
+    /* Increase font size */
+    color: #fdf8ee;
+    /* White color for the project name */
 }
 
 /* Main Menu */
 .navbar-menu {
-    list-style: none; /* Remove bullet points */
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
-    display: flex; /* Make the menu horizontal */
-  gap: 2px; /* Space between menu items */
-    list-style: none; /* Remove bullet points */
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Reset default margin */
+    padding: 0;
+    /* Reset default padding */
+    display: flex;
+    /* Make the menu horizontal */
+    gap: 2px;
+    /* Space between menu items */
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Reset default margin */
+    padding: 0;
+    /* Reset default padding */
 }
 
-.navbar-menu > li {
-    position: relative; /* Enable positioning for dropdown */
-      float: left; /* Make list items horizontal */
+.navbar-menu>li {
+    position: relative;
+    /* Enable positioning for dropdown */
+    float: left;
+    /* Make list items horizontal */
 
 }
 
 /* Base Styles for Links */
-.navbar-menu > li > a,
+.navbar-menu>li>a,
 .navbar-menu .dropdown-menu a {
     font-family: 'Fira Sans', sans-serif;
-    color: #232e5a; /* Dark blue text */
-    text-decoration: none; /* Remove underline */
+    color: #232e5a;
+    /* Dark blue text */
+    text-decoration: none;
+    /* Remove underline */
     font-weight: normal;
-    padding: 10px 15px; /* Add padding around menu text */
-    transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
-    background-color: transparent; /* Transparent background */
-    border-radius: 5px; /* Rounded corners */
-    display: block; /* Make dropdown items block elements */
-    list-style: none; /* Remove bullet points */
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
-    display: block; /* Ensure links fill their parent list items */
+    padding: 10px 15px;
+    /* Add padding around menu text */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth hover effects */
+    background-color: transparent;
+    /* Transparent background */
+    border-radius: 5px;
+    /* Rounded corners */
+    display: block;
+    /* Make dropdown items block elements */
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Reset default margin */
+    padding: 0;
+    /* Reset default padding */
+    display: block;
+    /* Ensure links fill their parent list items */
     background-color: #fdf8ee;
-      padding: 10px 20px; /* Increase space inside the dropdown items */
-    min-width: 150px; /* Set a minimum width for dropdown boxes */
-    display: block; /* Ensure the clickable area is full-width */
-    text-align: left; /* Align text within the box */
+    padding: 10px 20px;
+    /* Increase space inside the dropdown items */
+    min-width: 150px;
+    /* Set a minimum width for dropdown boxes */
+    display: block;
+    /* Ensure the clickable area is full-width */
+    text-align: left;
+    /* Align text within the box */
 }
+
 /* Hide Dropdown Menu by Default */
 .navbar-menu .dropdown-menu {
-    display: none; /* Hides dropdown menu initially */
-  padding: 10px; /* Add space around the entire dropdown menu */
-    min-width: 200px; /* Minimum width for the entire dropdown */
-    background-color: ebbc4b; /* Background matches theme */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
-    border-radius: 5px; /* Optional rounded corners */
+    display: none;
+    /* Hides dropdown menu initially */
+    padding: 10px;
+    /* Add space around the entire dropdown menu */
+    min-width: 200px;
+    /* Minimum width for the entire dropdown */
+    background-color: ebbc4b;
+    /* Background matches theme */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for aesthetics */
+    border-radius: 5px;
+    /* Optional rounded corners */
 }
+
 /* Show Dropdown Menu on Hover */
-.navbar-menu > li:hover .dropdown-menu {
-    display: block; /* Displays dropdown menu on hover */
-    position: absolute; /* Ensures it floats */
-    top: 100%; /* Aligns it below the parent menu item */
-    left: 0; /* Aligns it with the left edge of the parent menu item */
-    background-color: #ebbc4b; /* Matches overall theme */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional dropdown shadow */
-    padding: 10px; /* Space inside dropdown menu */
-    border-radius: 5px; /* Rounded corners for dropdown */
+.navbar-menu>li:hover .dropdown-menu {
+    display: block;
+    /* Displays dropdown menu on hover */
+    position: absolute;
+    /* Ensures it floats */
+    top: 100%;
+    /* Aligns it below the parent menu item */
+    left: 0;
+    /* Aligns it with the left edge of the parent menu item */
+    background-color: #ebbc4b;
+    /* Matches overall theme */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional dropdown shadow */
+    padding: 10px;
+    /* Space inside dropdown menu */
+    border-radius: 5px;
+    /* Rounded corners for dropdown */
 }
+
 /* Hover Effects for All Links */
-.navbar-menu > li > a:hover,
+.navbar-menu>li>a:hover,
 .navbar-menu .dropdown-menu a:hover {
-    color: #232e5a; /* Yellow text on hover */
+    color: #232e5a;
+    /* Yellow text on hover */
     background-color: #ebbc4b;
 }
 
+/* Style for The Team page*/
 .team-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -134,7 +212,7 @@ nav ul {
     flex-direction: column;
     gap: 20px;
 }
- 
+
 .team-member {
     display: flex;
     align-items: center;
@@ -143,140 +221,131 @@ nav ul {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
- 
+
 .team-member .bio {
     flex: 1;
     margin-right: 20px;
 }
- 
+
 .team-member img {
     max-width: 250px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
- 
-h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #232e5a;
-}
- 
-p {
-    margin: 5px 0;
-}
-/* Main Content */
-main {
-    background-color: #ffffff; /* White for main content */
-    padding: 40px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Footnotes and Bibliography */
+.footnotes,
+.bibliography {
+    text-align: left;
+    /* Left-justify the text */
+    font-size: 14px;
+    /* 2pt smaller than main text (16px - 2pt = 14px) */
+    line-height: 1.4;
+    /* Adjust line spacing for smaller text */
+    margin-top: 10px;
+    /* Add some space above the section */
 }
 
-/* Footnotes and Bibliography */
-.footnotes, .bibliography {
-    text-align: left; /* Left-justify the text */
-    font-size: 14px; /* 2pt smaller than main text (16px - 2pt = 14px) */
-    line-height: 1.4; /* Adjust line spacing for smaller text */
-    margin-top: 10px; /* Add some space above the section */
-}
 .footnote {
-    font-size: 0.8em; /* Smaller than main text */
-    font-weight: normal !important; /* Explicitly remove bold styling */
-    vertical-align: super; /* Position it as superscript */
-    line-height: 1; /* Maintain proper spacing */
+    font-size: 0.8em;
+    /* Smaller than main text */
+    font-weight: normal !important;
+    /* Explicitly remove bold styling */
+    vertical-align: super;
+    /* Position it as superscript */
+    line-height: 1;
+    /* Maintain proper spacing */
 }
 
 
 .bibliography p {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    text-indent: -20px; /* Indent the first line negatively */
-    margin-left: 20px; /* Push the entire paragraph to the right */
-    line-height: 1.5; /* Adjust line spacing for readability */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    text-indent: -20px;
+    /* Indent the first line negatively */
+    margin-left: 20px;
+    /* Push the entire paragraph to the right */
+    line-height: 1.5;
+    /* Adjust line spacing for readability */
 }
-
-/* Home Page Styles */
-#home-page h2 {
-    font-size: 1.8rem;
-    color: #232e5a;
-    border-bottom: 3px solid #ebbc4b;
-}
-
-#home-page p {
-    font-size: 1rem;
-    color: #333;
-}
-
-/* About Page Styles */
-#about-page h2 {
-    color: #232e5a;
-    border-bottom: 3px solid #ebbc4b;
-}
-
-#about-page p {
-    font-size: 1rem;
-    color: #333;
-}
-
 
 /* Timeline Container */
 #timeline-page .timeline {
     position: relative;
     padding: 20px 0;
-    border-left: none; /* Remove existing line on the left */
-    border-right: none; /* Add central line */
+    border-left: none;
+    /* Remove existing line on the left */
+    border-right: none;
+    /* Add central line */
     width: 2px;
-    background-color: #00a29f; /* Green central timeline line */
-    margin: 0 auto; /* Center the timeline line */
+    background-color: #00a29f;
+    /* Green central timeline line */
+    margin: 0 auto;
+    /* Center the timeline line */
 }
 
 /* Timeline Entry */
 #timeline-page .timeline-entry {
     position: relative;
-    width: 50%; /* Half-width for alternating sides */
+    width: 50%;
+    /* Half-width for alternating sides */
     padding: 10px 20px;
     margin-bottom: 20px;
-    display: flex; /* Enables better alignment */
+    display: flex;
+    /* Enables better alignment */
     align-items: center;
 }
 
 /* Alternating Entry Positions */
 #timeline-page .timeline-entry:nth-child(odd) {
-    left: 0; /* Align left */
-    justify-content: flex-end; /* Align text away from the center line */
-    text-align: right; /* Text alignment for left-side entries */
+    left: 0;
+    /* Align left */
+    justify-content: flex-end;
+    /* Align text away from the center line */
+    text-align: right;
+    /* Text alignment for left-side entries */
 }
 
 #timeline-page .timeline-entry:nth-child(even) {
-    left: 50%; /* Align right */
-    justify-content: flex-start; /* Align text away from the center line */
-    text-align: left; /* Text alignment for right-side entries */
+    left: 50%;
+    /* Align right */
+    justify-content: flex-start;
+    /* Align text away from the center line */
+    text-align: left;
+    /* Text alignment for right-side entries */
 }
 
 /* Connecting Markers */
 #timeline-page .timeline-entry::before {
     content: '';
     position: absolute;
-    top: 15px; /* Align marker with text */
-    right: -12px; /* Position marker for left-aligned entries */
+    top: 15px;
+    /* Align marker with text */
+    right: -12px;
+    /* Position marker for left-aligned entries */
     width: 15px;
     height: 15px;
-    background-color: #00a29f; /* Green marker */
-    border: 3px solid #fdf8ee; /* Light border */
+    background-color: #00a29f;
+    /* Green marker */
+    border: 3px solid #fdf8ee;
+    /* Light border */
     border-radius: 50%;
     z-index: 1;
 }
 
 #timeline-page .timeline-entry:nth-child(even)::before {
-    left: -12px; /* Adjust marker position for right-aligned entries */
-    right: auto; /* Reset for alternating logic */
+    left: -12px;
+    /* Adjust marker position for right-aligned entries */
+    right: auto;
+    /* Reset for alternating logic */
 }
 
 /* Styling for Text Blocks */
 #timeline-page .timeline-entry-content {
-    background-color: #fdf8ee; /* Light Yellow */
+    background-color: #fdf8ee;
+    /* Light Yellow */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -317,7 +386,8 @@ main {
 }
 
 /* Buttons */
-button, .btn {
+button,
+.btn {
     background-color: #00a29f;
     color: #fdf8ee;
     border: none;
@@ -328,7 +398,8 @@ button, .btn {
     transition: background-color 0.3s;
 }
 
-button:hover, .btn:hover {
+button:hover,
+.btn:hover {
     background-color: #232e5a;
 }
 
@@ -349,47 +420,58 @@ footer a {
 footer a:hover {
     color: #f34b2e;
 }
+
 /* General styles for funder logos */
 #funder-logos {
     margin-top: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px; /* Adds space between logos */
+    gap: 10px;
+    /* Adds space between logos */
 }
- 
+
 .funder-logo {
-    max-height: 60px; /* Adjust logo size as needed */
+    max-height: 60px;
+    /* Adjust logo size as needed */
     padding: 5px;
     display: inline-block;
 }
- 
+
 /* Specific styles for logos requiring a white background */
 .funder-logo.white-bg {
-    background-color: #fff; /* White background */
-    border-radius: 5px; /* Optional rounded corners */
-    padding: 10px; /* Adjust padding to space the logo */
-    box-shadow: 02px4pxrgba(0, 0, 0, 0.1); /* Optional shadow */
+    background-color: #fff;
+    /* White background */
+    border-radius: 5px;
+    /* Optional rounded corners */
+    padding: 10px;
+    /* Adjust padding to space the logo */
+    box-shadow: 02px4pxrgba(0, 0, 0, 0.1);
+    /* Optional shadow */
 }
- 
+
 /* Links Styled Like Main Text */
 a {
-    color: inherit; /* Inherit color from the main text */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    color: inherit;
+    /* Inherit color from the main text */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
 }
 
 /* Links Hover Effect */
 a:hover {
-    color: #00a29f; /* Green color for hover */
-    text-decoration: underline; /* Optional: Add underline on hover */
+    color: #00a29f;
+    /* Green color for hover */
+    text-decoration: underline;
+    /* Optional: Add underline on hover */
 }
 
-img {	
-	/* Add the css to control your images here */
-	float: right;
-	height: 200px;
-	padding: 5px;
+img {
+    /* Add the css to control your images here */
+    float: right;
+    height: 200px;
+    padding: 5px;
 }
 
 /* Responsive Design */
@@ -406,7 +488,8 @@ img {
         font-size: 1.5rem;
     }
 
-    button, .btn {
+    button,
+    .btn {
         font-size: 0.9rem;
     }
 
@@ -430,11 +513,18 @@ img {
 }
 
 /* Page IDs for Styling */
-#home-page, #about-page, #project-overview-page, #team-page,
-#how-made-page, #quotations-page, #timeline-page, #visualizations-page,
+#home-page,
+#about-page,
+#project-overview-page,
+#team-page,
+#how-made-page,
+#quotations-page,
+#timeline-page,
+#visualizations-page,
 #contact-page {
     padding: 40px;
-    background-color: #fdf8ee; /* Light yellow background */
+    background-color: #fdf8ee;
+    /* Light yellow background */
 }
 
 /* Footer Styles */
@@ -460,4 +550,5 @@ footer {
 footer p {
     margin-top: 10px;
     font-size: 0.9rem;
+    color: #fdf8ee;
 }
